@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        Toast.makeText(baseContext, "作者：王姿侑", Toast.LENGTH_LONG).show()
+        Toast.makeText(baseContext, "作者： 王姿侑 ", Toast.LENGTH_LONG).show()
 
 
 
