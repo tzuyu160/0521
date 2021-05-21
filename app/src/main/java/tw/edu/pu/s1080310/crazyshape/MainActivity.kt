@@ -12,6 +12,7 @@ import com.bumptech.glide.module.AppGlideModule
 import kotlinx.android.synthetic.main.activity_main.*
 
 
+
 @GlideModule
 public final class MyAppGlideModule : AppGlideModule()
 
@@ -22,8 +23,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         val img: ImageView = findViewById(R.id.imgTitle)
-        MyAppGlideModule.with(this)
+        GlideApp.with(this)
             .load(R.drawable.cover)
             .override(800, 600)
             .into(img)
